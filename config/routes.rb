@@ -10,4 +10,11 @@ Rails.application.routes.draw do
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
   patch '/change-password' => 'users#changepw'
+
+  # Dialog routes
+  get '/dialogs' => 'dialogs#index'
+  get '/dialogs/:id' => 'dialogs#show'
+  post '/dialogs' => 'dialogs#create'
+  patch '/dialogs/:id' => 'dialogs#update'
+  delete '/dialogs/:id' => 'dialogs#destroy'
 end
