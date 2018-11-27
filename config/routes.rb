@@ -12,9 +12,9 @@ Rails.application.routes.draw do
   patch '/change-password' => 'users#changepw'
 
   # Dialog routes
-  get '/dialogs' => 'dialogs#index'
-  get '/dialogs/:id' => 'dialogs#show'
-  post '/dialogs' => 'dialogs#create'
-  patch '/dialogs/:id' => 'dialogs#update'
-  delete '/dialogs/:id' => 'dialogs#destroy'
+  # get '/dialogs' => 'dialogs#index'
+  # get '/dialogs/:id' => 'dialogs#show'
+  # post '/dialogs' => 'dialogs#create'
+  # patch '/dialogs/:id' => 'dialogs#update'
+  # delete '/dialogs/:id' => 'dialogs#destroy'
 end

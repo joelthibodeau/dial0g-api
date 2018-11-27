@@ -18,10 +18,10 @@ class DialogsController < OpenReadController
   # POST /dialogs
   def create
     # original scaffold code
-    # @dialog = Dialog.new(dialog_params)
+    @dialog = Dialog.new(dialog_params)
 
     # based on examples_controller
-    @dialog = current_user.dialogs.build(dialog_params)
+    # @dialog = current_user.dialogs.build(dialog_params)
 
     if @dialog.save
       render json: @dialog, status: :created, location: @dialog
