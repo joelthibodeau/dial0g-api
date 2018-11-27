@@ -1,5 +1,5 @@
 class DialogsController < ApplicationController
-  before_action :set_dialog, only: [:show, :update, :destroy]
+  before_action :set_dialog, only: %i[show update destroy]
 
   # GET /dialogs
   def index
