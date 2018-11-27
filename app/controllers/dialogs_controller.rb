@@ -21,7 +21,7 @@ class DialogsController < OpenReadController
     # @dialog = Dialog.new(dialog_params)
 
     # based on examples_controller
-    @dialog = current_user.dialog.build(dialog_params)
+    @dialog = current_user.dialogs.build(dialog_params)
 
     if @dialog.save
       render json: @dialog, status: :created, location: @dialog
