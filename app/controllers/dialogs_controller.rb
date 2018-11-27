@@ -1,4 +1,6 @@
-class DialogsController < ApplicationController
+# frozen_string_literal: true
+
+class DialogsController < OpenReadController
   before_action :set_dialog, only: %i[show update destroy]
 
   # GET /dialogs
@@ -15,7 +17,11 @@ class DialogsController < ApplicationController
 
   # POST /dialogs
   def create
-    @dialog = Dialog.new(dialog_params)
+    # original scaffold code
+    # @dialog = Dialog.new(dialog_params)
+
+    # based on examples_controller
+    @dialog = current_user.dialog.build(dialog_params)
 
     if @dialog.save
       render json: @dialog, status: :created, location: @dialog
