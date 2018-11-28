@@ -45,13 +45,15 @@ class DialogsController < OpenReadController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_dialog
-      @dialog = Dialog.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def dialog_params
-      params.require(:dialog).permit(:date, :entry_name, :rating, :notes)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_dialog
+    # @dialog = Dialog.find(params[:id])
+    @dialog = current_user.dialogs.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def dialog_params
+    params.require(:dialog).permit(:date, :entry_name, :rating, :notes)
+  end
 end

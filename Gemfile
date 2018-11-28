@@ -11,13 +11,14 @@ gem 'rack-cors', '~> 1.0.2', require: 'rack/cors'
 gem 'rails', '~> 5.2.1'
 
 group :development, :test do
-  gem 'rails-erd'
   gem 'byebug', '~> 10.0.0', platform: :mri
   gem 'dotenv-rails', '~> 2.2.1'
   gem 'pry', '~> 0.11.3'
   gem 'pry-byebug', '~> 3.6.0'
+  gem 'rails-erd'
   gem 'rspec-rails', '~> 3.7.2'
   gem 'rubocop', '~> 0.52.1'
+  gem 'seed_dump'
 end
 
 group :development do
