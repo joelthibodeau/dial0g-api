@@ -11,9 +11,9 @@ sign in and begin creating records.
 
 ### Links ###
 
-• API Repository – https://github.com/joelthibodeau/dial0g-api
-• Client Repository – https://github.com/joelthibodeau/dial0g-client
-• Deployed back-end – https://dial0g-api.herokuapp.com/
+* API Repository – https://github.com/joelthibodeau/dial0g-api
+* Client Repository – https://github.com/joelthibodeau/dial0g-client
+* Deployed back-end – https://dial0g-api.herokuapp.com/
 
 ### Technologies ###
 
@@ -45,4 +45,4 @@ are represented by the knob setting originally saved providing easy to read visu
 Both the front end and back end took longer than expected, and I wasn't able to create
 working knob for the deadline. I plan to add this feature in the future so that the
 user experience is more meaningful. Additionally, the application has been scaffolded to
-to accept notes from the user and the form field will be added in a future iteration.
+accept notes from the user and the form field will be added in a future iteration.
