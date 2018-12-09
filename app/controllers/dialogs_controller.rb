@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class DialogsController < OpenReadController
+class DialogsController < ProtectedController
   before_action :set_dialog, only: %i[show update destroy]
 
   # GET /dialogs
   def index
-    @dialogs = Dialog.all
+    @dialogs = current_user.dialogs.all
 
     render json: @dialogs
   end
