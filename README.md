@@ -33,7 +33,7 @@ Ruby on Rails along with heroku for the back-end to create this single page appl
 * As a user, I want to have the option to change my password.
 * As a user, I want to sign out.
 
-### Wireframe ###
+### Entity Relationship Diagram (ERD) ###
 
 ![dial0g ERD](https://i.imgur.com/whBXYQV.jpg?1)
 
